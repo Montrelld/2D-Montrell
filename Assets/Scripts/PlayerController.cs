@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         MoveAction.Enable();
+        rigidbody2d = GetComponent<Rigidbody2D>();
      
     }
 
@@ -21,6 +22,7 @@ public class PlayerController : MonoBehaviour
         Vector2 position = (Vector2)transform.position + move * 3.0f * Time.deltaTime;
 
         transform.position = position;
+        rigidbody2d.MovePosition(position);
  
  
     }
