@@ -18,11 +18,17 @@ public class PlayerController : MonoBehaviour
     bool isInvincible;
     float invincibleTimer;
 
+    // Variables related to animation
+    Animator animator;
+    Vector2 moveDirection = new Vector2(1,0);
+
     // Start is called before the first frame update
     void Start()
     {
         MoveAction.Enable();
         rigidbody2d = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        currentHealth = maxHealth;
      
     }
 
@@ -38,6 +44,16 @@ public class PlayerController : MonoBehaviour
             if (invincibleTimer < 0)
                 isInvincible = false;
         }
+
+          if(!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y,0.0f))
+        {
+            moveDirection.Set(move.x, move.y);
+            moveDirection.Normalize();
+        }
+
+        animator.SetFloat("Look X", moveDirection.x);
+        animator.SetFloat("Look Y", moveDirection.y);
+        animator.SetFloat("Speed", move.magnitude);
     }
 
     void FixedUpdate()
