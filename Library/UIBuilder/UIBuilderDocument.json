@@ -15,18 +15,18 @@
                 "m_VisualTreeAssetBackup": {
                     "instanceID": 0
                 },
-                "m_OpenendVisualTreeAssetOldPath": "Assets/GameUI.uxml",
+                "m_OpenendVisualTreeAssetOldPath": "Assets/NPCDialogue.uxml",
                 "m_VisualTreeAsset": {
                     "fileID": 9197481963319205126,
-                    "guid": "b6dba2d45292b4aad8e790ae5689ad12",
+                    "guid": "1f90238640d7f427ea0251956a315563",
                     "type": 3
                 },
                 "m_ActiveStyleSheet": {
                     "instanceID": 0
                 },
                 "m_Settings": {
-                    "UxmlGuid": "b6dba2d45292b4aad8e790ae5689ad12",
-                    "UxmlPath": "Assets/GameUI.uxml",
+                    "UxmlGuid": "1f90238640d7f427ea0251956a315563",
+                    "UxmlPath": "Assets/NPCDialogue.uxml",
                     "CanvasX": 0,
                     "CanvasY": 0,
                     "CanvasWidth": 350,

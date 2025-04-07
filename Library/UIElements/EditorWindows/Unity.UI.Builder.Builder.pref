@@ -26,9 +26,10 @@ MonoBehaviour:
   - __PanelContainer__rootVisualContainer__main-view-split-view__explorer-library-split-view__stylesheet-hierarchy-split-view__builder-hierarchy__unity-builder-explorer-tree__unity-tree-view__list-view__list-view__scroll-view__VerticalScroller__Slider__UnityEngine.UIElements.Slider
   - __PanelContainer__rootVisualContainer__main-view-split-view__explorer-library-split-view__stylesheet-hierarchy-split-view__builder-hierarchy__unity-builder-explorer-tree__unity-tree-view__list-view__list-view__scroll-view__HorizontalScroller__Slider__UnityEngine.UIElements.Slider
   - unity-ui-builder-library__Unity.UI.Builder.BuilderLibrary
-  - unity-ui-builder-library-controls-plane__Unity.UI.Builder.BuilderLibraryPlainView
-  - __PanelContainer__rootVisualContainer__main-view-split-view__explorer-library-split-view__unity-ui-builder-library__unity-ui-builder-library-controls-plane__scroll-view__VerticalScroller__Slider__UnityEngine.UIElements.Slider
-  - __PanelContainer__rootVisualContainer__main-view-split-view__explorer-library-split-view__unity-ui-builder-library__unity-ui-builder-library-controls-plane__scroll-view__HorizontalScroller__Slider__UnityEngine.UIElements.Slider
+  - __PanelContainer__rootVisualContainer__main-view-split-view__explorer-library-split-view__unity-ui-builder-library__unity-ui-builder-library-project-view__samples-tree__UnityEngine.UIElements.TreeView
+  - __PanelContainer__rootVisualContainer__main-view-split-view__explorer-library-split-view__unity-ui-builder-library__unity-ui-builder-library-project-view__samples-tree__unity-tree-view__list-view__UnityEngine.UIElements.ListView
+  - __PanelContainer__rootVisualContainer__main-view-split-view__explorer-library-split-view__unity-ui-builder-library__unity-ui-builder-library-project-view__samples-tree__unity-tree-view__list-view__list-view__scroll-view__VerticalScroller__Slider__UnityEngine.UIElements.Slider
+  - __PanelContainer__rootVisualContainer__main-view-split-view__explorer-library-split-view__unity-ui-builder-library__unity-ui-builder-library-project-view__samples-tree__unity-tree-view__list-view__list-view__scroll-view__HorizontalScroller__Slider__UnityEngine.UIElements.Slider
   - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__Unity.UI.Builder.TwoPaneSplitView
   - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__Unity.UI.Builder.TwoPaneSplitView
   - __PanelContainer__rootVisualContainer__main-view-split-view__middle-right-split-view__viewport-preview-split-view__uxml-uss-split-view__Unity.UI.Builder.TwoPaneSplitView
@@ -62,27 +63,28 @@ MonoBehaviour:
   - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":0.0}'
   - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":0.0}'
   - '{"m_ElementInfoVisibilityState":0}'
-  - '{"m_ExpandedItemIds":[]}'
+  - '{"m_ExpandedItemIds":[1,905769440]}'
   - '{"m_ScrollOffset":0.0,"m_ShowAlternatingRowBackgrounds":0}'
   - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":0.0}'
   - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":0.0}'
-  - '{"m_ShowPackageTemplates":false,"m_ViewMode":0,"m_ActiveTab":0}'
-  - '{"m_SelectedItemId":0}'
-  - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":78.0}'
+  - '{"m_ShowPackageTemplates":false,"m_ViewMode":0,"m_ActiveTab":1}'
+  - '{"m_ExpandedItemIds":[-799497747]}'
+  - '{"m_ScrollOffset":0.0,"m_ShowAlternatingRowBackgrounds":0}'
+  - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":-306.0}'
   - '{"m_Value":0.0,"m_LowValue":0.0,"m_HighValue":0.0}'
   - '{"m_FixedPaneDimension":300.0}'
   - '{"m_FixedPaneDimension":20.0}'
   - '{"m_FixedPaneDimension":200.0}'
-  - '{"m_CachedScrollPositionCount":0,"m_OldestScrollPositionIndex":0,"m_CachedContentHeights":[0.0,0.0,0.0,0.0,0.0],"m_CachedScrollPositions":[{"scrollPosition":0.0,"maxScrollValue":0.0},{"scrollPosition":0.0,"maxScrollValue":0.0},{"scrollPosition":0.0,"maxScrollValue":0.0},{"scrollPosition":0.0,"maxScrollValue":0.0},{"scrollPosition":0.0,"maxScrollValue":0.0}]}'
+  - '{"m_CachedScrollPositionCount":3,"m_OldestScrollPositionIndex":0,"m_CachedContentHeights":[942.0,880.0,999.0,0.0,0.0],"m_CachedScrollPositions":[{"scrollPosition":108.0,"maxScrollValue":108.0},{"scrollPosition":46.0,"maxScrollValue":46.0},{"scrollPosition":165.0,"maxScrollValue":165.0},{"scrollPosition":0.0,"maxScrollValue":0.0},{"scrollPosition":0.0,"maxScrollValue":0.0}]}'
+  - '{"m_Value":true}'
+  - '{"m_Value":false}'
+  - '{"m_Value":false}'
   - '{"m_Value":true}'
   - '{"m_Value":false}'
   - '{"m_Value":false}'
   - '{"m_Value":false}'
   - '{"m_Value":false}'
-  - '{"m_Value":false}'
-  - '{"m_Value":false}'
-  - '{"m_Value":false}'
-  - '{"m_Value":false}'
+  - '{"m_Value":true}'
   - '{"m_Value":true,"fieldValues":[]}'
   - '{"m_Value":true,"fieldValues":[]}'
   - '{"m_Value":false}'
@@ -90,7 +92,7 @@ MonoBehaviour:
   - '{"m_Value":false}'
   - '{"m_Value":true,"fieldValues":[]}'
   - '{"m_Value":false}'
-  - '{"m_Value":true,"fieldValues":[]}'
+  - '{"m_Value":true,"fieldValues":[{"r":0.0,"g":0.0,"b":0.0,"a":255.0},{"r":0.0,"g":0.0,"b":0.0,"a":255.0},{"r":0.0,"g":0.0,"b":0.0,"a":255.0},{"r":0.0,"g":0.0,"b":0.0,"a":255.0}]}'
   - '{"m_Value":true,"fieldValues":[]}'
   - '{"m_Value":true,"fieldValues":[]}'
   - '{"m_Value":false}'

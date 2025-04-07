@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     // Variables related to animation
     Animator animator;
     Vector2 moveDirection = new Vector2(1,0);
+    public InputAction talkAction;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,8 @@ public class PlayerController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         currentHealth = maxHealth;
+        talkAction.Enable();
+
      
     }
 
@@ -54,6 +57,14 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Look X", moveDirection.x);
         animator.SetFloat("Look Y", moveDirection.y);
         animator.SetFloat("Speed", move.magnitude);
+
+        if(talkAction.triggered)
+        {
+            Debug.Log("X was pressed");
+            FindFriend();
+        }
+
+        
     }
 
     void FixedUpdate()
@@ -76,6 +87,23 @@ public class PlayerController : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         
         UIHealthBar.instance.SetValue(currentHealth / (float)maxHealth);
+    }
+
+    void FindFriend()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(rigidbody2d.position + Vector2.up * 0.2f, moveDirection, 5f, LayerMask.GetMask("NPC"));
+        Debug.DrawRay(rigidbody2d.position + Vector2.up * 0.2f, moveDirection, Color.red, 5f);
+        if(hit.collider != null)
+        {
+            Debug.Log("Raycast touched " + hit.collider.gameObject.name);
+            NonPlayerCharacter character = hit.collider.GetComponent<NonPlayerCharacter>();
+
+            if(character != null)
+            {
+                UIHandler.instance.DisplayDialogue(character.dialogue);
+            }
+
+        }
     }
 }
 
